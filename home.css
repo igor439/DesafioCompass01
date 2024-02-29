@@ -1,0 +1,752 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Isso garante que o conteúdo seja centralizado verticalmente em qualquer tela */
+    margin: 0; /* Remova as margens padrão do corpo */
+
+  
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Isso garante que o conteúdo seja centralizado verticalmente em qualquer tela */
+    margin: 0; /* Remova as margens padrão do corpo */
+    padding: 0 30px;
+}
+
+
+
+.greenText{
+    color: green;
+    font-weight: bold;
+}
+
+
+
+#tematicCard {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #FAFAFA;
+    padding: 30px;
+}
+
+#tematicCard li {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr; /* Ajustado para duas colunas */
+    gap: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#tematicCard img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+    grid-row: 1 / span 3;
+    grid-column: 2 / -1; /* Ajustado para iniciar na segunda coluna e ocupar até o final */
+}
+
+
+#tematicCard > li:nth-child(1) > p:nth-child(2){
+    font-weight: bolder;
+}
+
+#tematicCard > li:nth-child(2) > p:nth-child(2){
+    font-weight: bolder;
+}
+
+#tematicCard > li:nth-child(3) > p:nth-child(2){
+    font-weight: bolder
+}
+
+
+
+#tematicCard > li:nth-child(1) > p:nth-child(1){
+    font-size: smaller;
+}
+
+#tematicCard > li:nth-child(2) > p:nth-child(1){
+    font-size: smaller;
+}
+
+#tematicCard > li:nth-child(3) > p:nth-child(1){
+    font-size: smaller;
+}
+
+#tematicCard > li:nth-child(1) > p:nth-child(3){
+    font-size: smaller;
+}
+
+#tematicCard > li:nth-child(2) > p:nth-child(3){
+    font-size: smaller;
+}
+
+#tematicCard > li:nth-child(3) > p:nth-child(3){
+    font-size: smaller;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#SectionPattern2 {
+    display: grid;
+    grid-template-columns:  0.5fr 1fr; 
+    grid-template-rows:  1fr auto;
+    gap: 2px;
+    padding: 0px;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+
+
+
+#SectionPattern2 > h1, #SectionPattern2 > p {
+
+    position: absolute;
+
+}
+
+#SectionPattern2 > p {
+    margin-top: 80px; /* Ajuste a margem superior conforme necessário */
+    
+    margin-left: 100px;
+}
+
+#SectionPattern2 > h1 {
+    margin-bottom: 0px; /* Ajuste a margem inferior conforme necessário */
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+
+
+#SectionPattern2 img {
+
+    
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ou 'contain', dependendo do comportamento desejado */
+    border-radius: 10px;
+    
+}
+
+#SectionPattern2 nav ul {
+    
+    grid-row-start: 2;
+    grid-row-end: -3;
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    
+    
+}
+
+#SectionPattern2 nav ul li {
+    display: flex;
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+
+#SectionPattern2 nav ul > li {
+    margin-right: 10px; 
+    margin-left: 5px;
+}
+
+
+.subNavPrev, .subNavNext{
+    width: 10%;
+    height: 10%;
+}
+
+
+
+#productList1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+    gap: 2px;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+#SectionPattern2 nav ul > li {
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+#productList1 li {
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+
+
+#productList1 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+#SectionPattern2_1 {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr ; 
+    grid-template-rows: auto auto ;
+    gap: 2px;
+    padding: 0px;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#SectionPattern2_1 nav ul > li {
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+#SectionPattern2_1 > h1, #SectionPattern2_1 > p {
+
+    right: 10%;
+    position: absolute;
+
+}
+
+
+#SectionPattern2_1 > p{
+    margin-top: 50px;
+    margin-right: 86px;
+}
+
+
+
+#SectionPattern2_1 img {
+
+    
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ou 'contain', dependendo do comportamento desejado */
+    border-radius: 10px;
+    
+}
+
+#SectionPattern2_1 nav ul {
+    
+    grid-row-start: 2;
+    grid-row-end: -3;
+    grid-column-start: 1;
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 120px;
+    
+    
+}
+
+#SectionPattern2_1 nav ul li {
+    display: flex;
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+
+#SectionPattern2_1 nav ul > li {
+    margin-right: 35px; 
+    margin-left: 5px;
+}
+
+#productList2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+    gap: 2px;
+    list-style: none;
+}
+
+#productList2 li {
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+#productList2 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+
+#SectionPattern1 {
+    display: grid;
+    grid-template-columns:  1.5fr 1fr; 
+    grid-template-rows:  70px 100px auto 2fr;
+    gap: 2px;
+    padding: 0px;
+    
+}
+
+#SectionPattern1 img {
+
+    
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ou 'contain', dependendo do comportamento desejado */
+    border-radius: 10px;
+    
+}
+
+#SectionPattern1 div {
+
+    
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+#SectionPattern1 div {
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+#SectionPattern1 div > img{
+    width: 50%;
+    height: 50%;
+}
+
+#SectionPattern1 div > h1{
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+
+}
+
+#SectionPattern1 div > p{
+  
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+}
+
+#SectionPattern1  > h1{
+   
+    text-align: center;
+
+
+}
+
+#SectionPattern1  > p{
+   
+    text-align: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+#SectionPattern0 {
+    justify-content: center;
+    display: grid;
+    grid-template-columns:  1fr 1fr; 
+    grid-template-rows:  auto auto auto ;
+    gap: 2px;
+    padding: 0px;
+    position: relative;
+    
+}
+
+#SectionPattern0 img {
+
+    
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ou 'contain', dependendo do comportamento desejado */
+    border-radius: 10px;
+    
+}
+
+
+#SectionPattern0 div {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+#SectionPattern0 div {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+#SectionPattern0 div > img{
+    width: 80%;
+    height: 80%;
+    margin-left: 50px;
+}
+
+#SectionPattern0 div > p{
+  
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+}
+
+#SectionPattern0  > h1{
+   
+    text-align: center;
+
+
+}
+
+#SectionPattern0  > p{
+   
+    text-align: center;
+
+
+}
+
+
+
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainNavBar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+.mainNavBar a{
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.mainNavBar a:hover{
+    background-color: hsl(0, 0%, 84%);
+}
+.mainNavBar li{
+    float: left;
+}
+
+
+body > header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body > header >h1 {
+    font-size: medium;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.blueText{
+    color: #23A6F0;
+}
+
+
+#highlightsContent{
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.navigation{
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.navArrow {
+    position: fixed;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem; /* Adicione um espaçamento conforme necessário */
+    box-sizing: border-box;
+    pointer-events: none; /* Para evitar que as setas bloqueiem outros elementos */
+}
+
+#prev {
+    pointer-events: auto; /* Permitir interação com a seta */
+}
+
+#next {
+    pointer-events: auto; /* Permitir interação com a seta */
+}
+
+
+.bar{
+    width: 70px;
+    height: 3px;
+    border: 1px solid rgb(204, 204, 204);
+    margin: 2px;
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+.bar:hover{
+    background-color:white;
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    width: 100%;
+    height:500px;
+    display: flex;
+}
+
+
+.slide{
+    min-width: 100%; /* Alterado para ocupar 100% da largura da tela */
+    box-sizing: border-box;
+    width: 50%;
+    position: relative;
+}
+
+
+
+.overlayContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+.overlayContent h1, .overlayContent p{
+    color: white;
+    
+}
+
+
+.overlayContent h1{
+    font-size: 2em;
+    
+}
+
+.overlayContent p{
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    width: 500px;
+    
+}
+
+
+.overlayContent button{
+    background-color: #23A6F0;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    
+}
+
+
+div.slide.s1{
+   
+    background-position: center;
+    background-size: cover;
+    background-image: url("src/assets/images/imageSection02.png");
+}
+
+div.slide.s2{
+   
+    background-position: center;
+    background-size: cover;
+    background-image: url("src/assets/images/carouselImage.png");
+}
+
+
+
+#slide1:checked ~ .s1{
+    margin-left: 0px;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: -100%;
+}
+
+
+
+
+
+.olList {
+    list-style-type: none;
+    padding: 0;
+    counter-reset: item;
+    display: flex;
+    flex-direction: row;
+}
+
+.olList li {
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0px;
+}
+
+.olList li h1 {
+    font-size: 0.9em; /* Metade do tamanho padrão */
+    margin-bottom: 10px;
+}
+
+.olList li p {
+    grid-column-start: 2;
+    margin: 0;
+}
+
+.olList li::before {
+    margin-right: 10px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center; /* Adicionado para centralizar verticalmente */
+    justify-content: center;
+    content: counter(item) ".";
+    counter-increment: item;
+    font-size: 2em; /* Números grandes */
+    color: red; /* Números vermelhos */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+.visually-hidden{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
