@@ -42,7 +42,7 @@ export const section04ImageSource = {
 
 
 
-  export const sectionCardList:SectionCard[] = [new SectionCard("Your Space","Unique Life","/src/assets/images/product01.png"),
-  new SectionCard("Ends Today","Elements Style","/src/assets/images/product02.png"),
-  new SectionCard("Ends Today","Elements Style","/src/assets/images/product03.png"),
+  export const sectionCardList:SectionCard[] = [new SectionCard("Your Space","Unique Life","./src/assets/images/product01.png"),
+  new SectionCard("Ends Today","Elements Style","./src/assets/images/product02.png"),
+  new SectionCard("Ends Today","Elements Style","./src/assets/images/product03.png"),
 ]
