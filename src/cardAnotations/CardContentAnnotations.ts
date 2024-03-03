@@ -77,9 +77,7 @@ export function p(target: any, key: string){
     
     if(tamplete){
 
-        console.log(tamplete)
-        console.log(className + "SDFSa")
-        console.log("lkdjfhpsdkjf")
+        console.log(tamplete)        
 
         if (!tamplete[className]) {
             tamplete[className] = {} as ObjectHTMLTemplate;
@@ -133,7 +131,8 @@ async function saveToLocalStorage(key: string, value: TamplateObserver) {
         const jsonString = JSON.stringify(value);
 
         // Save to localStorage
-        localStorage.setItem(key, jsonString);
+        sessionStorage.setItem(key,jsonString);
+        
 
         //console.log(`Object saved to localStorage with key: ${key}`);
     } catch (error) {
@@ -144,7 +143,7 @@ async function saveToLocalStorage(key: string, value: TamplateObserver) {
 
  function getFromLocalStorage(key: string): TamplateObserver | null {
     try {
-        const jsonString = localStorage.getItem(key);
+        const jsonString = sessionStorage.getItem(key);
         if (jsonString) {
             // Parse the JSON string to an object
             return JSON.parse(jsonString) as TamplateObserver;

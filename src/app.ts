@@ -4,8 +4,10 @@ import { Section00 } from "./components/Section00.js";
 import { Section01 } from "./components/Section01.js";
 
 
+sessionStorage.setItem('testar o bagui', 'test');
 
 
+console.log(sessionStorage.getItem('testar o bagui') + "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
 const slides: NodeListOf<HTMLInputElement> = document.querySelectorAll('.slides input');
     let currentSlide: number = 0;

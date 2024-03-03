@@ -3,6 +3,8 @@ import { product04, product05, productList, section01ImageSource, section02Image
 import { TematicProductListInjection } from "./components/List.js";
 import { Section00 } from "./components/Section00.js";
 import { Section01 } from "./components/Section01.js";
+sessionStorage.setItem('testar o bagui', 'test');
+console.log(sessionStorage.getItem('testar o bagui') + "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 const slides = document.querySelectorAll('.slides input');
 let currentSlide = 0;
 function showSlide(index) {
