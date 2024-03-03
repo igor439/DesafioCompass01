@@ -3,8 +3,8 @@ import { Product } from "../models/Product.js";
 import { SectionCard } from "../models/SectionCard.js";
 
 
-export const product05 = new Product('English Department','15 Sales',6.48,"/src/assets/images/product05.png",3)
-export const product04 = new Product('English Department',' ',6.48,"/src/assets/images/product04.png",3)
+export const product05 = new Product('English Department','15 Sales',6.48,"./src/assets/images/product05.png",3)
+export const product04 = new Product('English Department',' ',6.48,"./src/assets/images/product04.png",3)
 export const blog = new Blog("A","b",'c',32);
 
 
