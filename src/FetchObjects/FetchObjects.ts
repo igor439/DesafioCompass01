@@ -8,35 +8,35 @@ export const product04 = new Product('English Department',' ',6.48,"/src/assets/
 export const blog = new Blog("A","b",'c',32);
 
 
-export const productList:Product[] = [new Product('Graphic Design','English Department',6.48,"/src/assets/images/product01.png",4),
-new Product('Graphic Design','English Department',6.48,"/src/assets/images/product02.png",4),
-new Product('Graphic Design','English Department',6.48,"/src/assets/images/product03.png",4),
-new Product('Graphic Design','English Department',6.48,"/src/assets/images/product01.png",4),
-new Product('Graphic Design','English Department',6.48,"/src/assets/images/product02.png",4),
-new Product('Graphic Design','English Department',6.48,"/src/assets/images/product03.png",4),
+export const productList:Product[] = [new Product('Graphic Design','English Department',6.48,"./src/assets/images/product01.png",4),
+new Product('Graphic Design','English Department',6.48,"./src/assets/images/product02.png",4),
+new Product('Graphic Design','English Department',6.48,"./src/assets/images/product03.png",4),
+new Product('Graphic Design','English Department',6.48,"./src/assets/images/product01.png",4),
+new Product('Graphic Design','English Department',6.48,"./src/assets/images/product02.png",4),
+new Product('Graphic Design','English Department',6.48,"./src/assets/images/product03.png",4),
 
 ]
 
 
 
 export const section04ImageSource = {
-    src:"/src/assets/images/imageSection04.png",
+    src:"./src/assets/images/imageSection04.png",
     alt:"A woman enjoying one of our delicious products, a burger"
   }
 
 
   export const section02ImageSource = {
-    src:"/src/assets/images/imageSection02.png",
+    src:"./src/assets/images/imageSection02.png",
     alt:"A woman enjoying one of our delicious products, a burger"
   }
 
   export const section01ImageSource = {
-    src:"/src/assets/images/imageSection01.png",
+    src:"./src/assets/images/imageSection01.png",
     alt:"A woman enjoying one of our delicious products, a burger"
   }
 
   export const section03ImageSource = {
-    src:"/src/assets/images/imageSection03.jpg",
+    src:"./src/assets/images/imageSection03.jpg",
     alt:"A woman enjoying one of our delicious products, a burger"
   }
 
