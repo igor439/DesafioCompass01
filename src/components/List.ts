@@ -38,13 +38,13 @@ export class ProductListInjection{
         const tamplete = objectsTemplate.getObjectTemplate('Product') as ObjectHTMLTemplate;
         const divElement = document.createElement('li');
 
-        const imageElement = document.createElement(tamplete._imageSource as string) as HTMLImageElement;
-        const nameElement = document.createElement(tamplete._name as string);
+        const imageElement = document.createElement(tamplete['_imageSource'] as string) as HTMLImageElement;
+        const nameElement = document.createElement(tamplete['_name'] as string);
 
     
 
-        const descriptionElement= document.createElement(tamplete._description as string)
-        const priceElement = document.createElement(tamplete._description as string)
+        const descriptionElement= document.createElement(tamplete.['_description'] as string)
+        const priceElement = document.createElement(tamplete.['_description'] as string)
 
         const discoutPriceElement = document.createElement('span');
 
@@ -108,12 +108,12 @@ export class TematicProductListInjection{
         const tamplete = objectsTemplate.getObjectTemplate('SectionCard') as ObjectHTMLTemplate;
         const divElement = document.createElement('li');
 
-        const imageElement = document.createElement(tamplete._imageSource as string) as HTMLImageElement;
-        const shortMensageElement = document.createElement(tamplete._shortMensage as string);
+        const imageElement = document.createElement(tamplete['_imageSource'] as string) as HTMLImageElement;
+        const shortMensageElement = document.createElement(tamplete['_shortMensage'] as string);
         const patterElement = document.createElement('p');
     
 
-        const sectionNameElement= document.createElement(tamplete._sectionName as string)
+        const sectionNameElement= document.createElement(tamplete['_sectionName'] as string)
         
 
     
